@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 
       // Once all files have been processed write them out.
       async.parallel(tasks, function(err, output) {
-        grunt.file.write(dest, output);
+        grunt.file.write(dest,output.join(""));
         grunt.log.writeln('File "' + dest + '" created.');
         done();
       });
