@@ -90,7 +90,7 @@ module.exports.stylesheet = function(srcFile, opts, done) {
       // Throw a warning if this image has already been encoded elsewhere
       // in the stylesheet
       if(cache[img]) {
-        grunt.log.warn('The image ' + img + ' has already been encoded elsewhere in your stylesheet. I\'m going to do it again, but it\'s going to make your stylesheet a lot larger than it needs to be.');
+        // grunt.log.warn('The image ' + img + ' has already been encoded elsewhere in your stylesheet. I\'m going to do it again, but it\'s going to make your stylesheet a lot larger than it needs to be.');
         result = result += cache[img];
         return complete();
       }
